@@ -16,3 +16,30 @@ What kind of python modules are you using now?
 pipenv run pip freeze
 ```
 You can use this information for understanding dependencies of your python modules.
+
+
+
+## Use docker
+
+1. Create Dockerfile
+```
+vim Dockerfile
+```
+
+
+2. Generate docker image from Dockerfile
+```
+docker build -t $your_container_image_name
+```
+
+
+3. Check your docker images
+```
+docker images
+```
+
+
+4. Run your new docker
+```
+docker run $your_container_image_name
+```
